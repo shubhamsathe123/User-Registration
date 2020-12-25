@@ -10,3 +10,5 @@ const email =prompt("enter your email");
 util.emailCheck(email);
 const number =prompt("enter your mobile no");
 util.mobileCheck(number);
+const pwd =prompt("enter your password");
+util.passwordCheck(pwd);
