@@ -3,6 +3,7 @@ class utility{
     FIRSTNAME = RegExp(`^[A-Z]{1}[a-z]{2,}$`);
     LASTNAME = RegExp(`^[A-Z]{1}[a-z]{2,}$`);
     EMAIL=RegExp('^[a-zA-Z0-9]+([._+#][a-zA-Z0-9]+)*@[a-zA-Z1-9]+.[a-zA-Z]{2,4}(.[a-zA-Z]{2,3})?$');
+    MOBILE=RegExp('^([0-9]{1,3}[ ]+)?[0-9]{10}$');
     firstName = (fname) =>
     {
       if(this.FIRSTNAME.test(fname))
@@ -39,6 +40,18 @@ class utility{
         {
           const email=this.PROMPT("enter your valid email again :");
           this.emailCheck(email);
+        }
+    }
+    mobileCheck = (number) =>
+    {
+        if(this.MOBILE.test(number))
+        {
+            console.log(`${number} is valid mobile no `)
+        }
+        else
+        {
+          const number=this.PROMPT("enter your valid mobile no again :");
+          this.mobileCheck(number);
         }
     }
 

@@ -8,3 +8,5 @@ const lname =prompt("enter your last name");
 util.lastName(lname);
 const email =prompt("enter your email");
 util.emailCheck(email);
+const number =prompt("enter your mobile no");
+util.mobileCheck(number);
