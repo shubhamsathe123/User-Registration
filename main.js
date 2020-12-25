@@ -4,3 +4,5 @@ const util=require("./utility");
 const prompt = require('prompt-sync')();
 const fname=prompt("enter your first name");
 util.firstName(fname);
+const lname =prompt("enter your last name");
+util.lastName(lname);
