@@ -6,3 +6,5 @@ const fname=prompt("enter your first name");
 util.firstName(fname);
 const lname =prompt("enter your last name");
 util.lastName(lname);
+const email =prompt("enter your email");
+util.emailCheck(email);
